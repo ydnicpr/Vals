@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person 💌</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="floating-hearts" id="heartsContainer"></div>
+    <div class="rain-container" id="rainContainer"></div>
+    <div class="card">
+
+        <div id="page1" class="page-section">
+            <h1 class="title">Do you like me? 🥺</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToPage2()">Yes</button>
+                <button class="btn btn-no" id="runawayBtn" onmouseover="moveButton(this)">No</button>
+            </div>
+            <p class="secret-text">Hover over "No" if you dare...</p>
+        </div>
+
+        <div id="page2" class="page-section hidden">
+            <h1 class="title">How much do you love me? ❤️</h1>
+
+            <div class="meter-container">
+                <input type="range" min="1" max="100" value="50" class="slider" id="loveSlider">
+                <p id="loveText">This much!</p>
+            </div>
+
+            <button class="btn btn-yes" onclick="goToPage3()">Next ➡️</button>
+        </div>
+
+        <div id="page3" class="page-section hidden">
+            <div class="character-area">
+                <img id="mainImage" src="us.jpg" alt="Us">
+            </div>
+
+            <div class="text-area">
+                <h1 id="mainTitle">I know you're already mine... ❤️</h1>
+                <p id="subText">And this is a little late. But will you be my Valentine today?</p>
+            </div>
+
+            <div class="buttons">
+                <button id="finalYesBtn" class="btn btn-yes" onclick="handleFinalYes()">Yes</button>
+                <button id="finalNoBtn" class="btn btn-no" onclick="handleFinalNo()">No</button>
+            </div>
+        </div>
+
+        <div id="page4" class="page-section hidden">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDN4ZHIxN3Z0ZnF3Ynd2Y2IxZm41aW14NWZ5Ynh6Y214aDF3aG0yMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/26BRv0ThflsKCq2Bc/giphy.gif"
+                alt="Celebration" class="celebration-img">
+            <h1 class="title">YAYYYYY! 🎉</h1>
+            <p>I love you so much! (Now come give me a kiss 💋)</p>
+        </div>
+
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
