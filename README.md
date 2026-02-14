@@ -6,22 +6,22 @@
 
 ## 📝 patch notes (aka my apology)
 
-**bug found:** i forgot to ask “will you be my valentine?”.<br>
+**bug found:** i forgot to ask “will u be my valentine?”.<br>
 **reason:** my brain lagged and i kept overthinking abt birthday gift instead....
 
 **to my (rightfully) very cute girlfriend:**
 
-i know i messed up. i know you were sad/mad and you had every right to be.
+i know i messed up. i know u were sad/mad and u had every right to be.
 
 so i made this instead.
-please accept this update to your heart? 🥺👉👈
+please accept this update to ur heart? 🥺👉👈
 
 ## ✨ features
 
-- **mobile friendly:** because you’re always on your phone and i wanted it to actually look nice there.
+- **mobile friendly:** because ure always on ur phone and i wanted it to actually look nice there.
 - **emotional damage mode:** try pressing “no” at the end. go ahead. i’ll just cry quietly (｡•́︿•̀｡)
-- **custom photos:** yes that’s our picture. because you’re literally the main character.
-- **strawberries & cream theme:** soft colors because you’re soft… even when you’re mad at me.
+- **custom photos:** yes that’s our picture.
+- **strawberries & cream theme:** soft colors because ure soft… even when ure mad at me.
 
 ---
-*made with love, panic, and way too much overthinking by your girlfriend ♡*
+*made with love, panic, and way too much overthinking by ur girlfriend ♡*
