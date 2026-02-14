@@ -1,7 +1,7 @@
 # 💝 project: better late than never
 
-> **status:** slightly late but full of love (╥﹏╥)
-> **target:** my favorite human everrrrr ♡
+> **status:** slightly late but full of love (╥﹏╥)<br>
+> **target:** my favorite human everrrrr ♡<br>
 > **deployment date:** february 14th, 2026 (yes… i know… pls don't be mad)
 
 ## 📝 patch notes (aka my apology)
