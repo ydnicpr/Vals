@@ -7,8 +7,7 @@
 ## 📝 patch notes (aka my apology)
 
 **bug found:** i forgot to ask “will you be my valentine?”.<br>
-**reason:** my brain lagged and i kept overthinking abt birthday gift instead....<br>
-**hotfix:** i built this tiny website because you deserve more than a dry one-line text.
+**reason:** my brain lagged and i kept overthinking abt birthday gift instead....
 
 **to my (rightfully) very cute girlfriend:**
 
