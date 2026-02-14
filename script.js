@@ -6,18 +6,21 @@ const CONFIG = {
     // You can use Giphy links or local images
     sadImages: [
         "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDIwZHIxN3Z0ZnF3Ynd2Y2IxZm41aW14NWZ5Ynh6Y214aDF3aG0yMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CM1rHbKDMH2BW/giphy.gif", // Shocked
-        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTVwZHIxN3Z0ZnF3Ynd2Y2IxZm41aW14NWZ5Ynh6Y214aDF3aG0yMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/OPU6KKavdyODgDiRk/giphy.gif", // Crying
-        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODJ3ZHIxN3Z0ZnF3Ynd2Y2IxZm41aW14NWZ5Ynh6Y214aDF3aG0yMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/d2lcHJTG5Tscg/giphy.gif"  // Sobbing
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDBlZW90NWtvYWxqeWR3amU5Z3pxaGY1d2xsNnM5aXNybTM0Nm16MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/P53TSsopKicrm/giphy.gif", // Crying
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGJ1YzA3OWp6dnN0bDl2amcydWN4MXl3MTR6NGhvM3RubWtvZDM1MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cdNS8BXPvk0NikBnaw/giphy.gif", // Sobbing
+        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NnU5Zm01MDU2ZGVyYm1kZzIydWRydng4d3R2NXRkZm5xZTJ3bG5ydSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QW2ccpbEdeI5UBugCh/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemJxdGxlYjhua3ozOWo2ejN0bXkydzkwZGFwM2Zxa29udTNoMW55ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4mkcJMSvG73AQ/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemJxdGxlYjhua3ozOWo2ejN0bXkydzkwZGFwM2Zxa29udTNoMW55ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MERLDpJ1MMfCSBknJm/giphy.gif"
     ],
 
     // Page 3: The "Guilt Trip" texts
     noTexts: [
-        "Are you sure?",
-        "Really sure?",
-        "Pookie please...",
-        "Don't do this to me :(",
-        "I'm gonna cry...",
-        "You're breaking my heart! 💔"
+        "are u sure?",
+        "really sure?",
+        "baby please...",
+        "don't do this to me :(",
+        "i'm gonna cry...",
+        "oh my god ig this is the end of my life 💔"
     ]
 };
 
@@ -31,14 +34,25 @@ let yesButtonScale = 1;
 const audio = document.getElementById('bgMusic');
 
 // --- PAGE 1: Runaway Button ---
+// --- PAGE 1: Runaway Button ---
 function moveButton(btn) {
+    // FIX: Move the button to the <body> so it escapes the card's boundaries
+    // This allows it to position correctly relative to the whole screen
+    if (btn.parentNode !== document.body) {
+        document.body.appendChild(btn);
+    }
+
     // Make the button jump to a random spot
+    // We add Math.max(0, ...) to ensure it never goes off the top/left edge
     const x = Math.random() * (window.innerWidth - btn.offsetWidth - 20);
     const y = Math.random() * (window.innerHeight - btn.offsetHeight - 20);
 
     btn.style.position = 'fixed';
-    btn.style.left = `${x}px`;
-    btn.style.top = `${y}px`;
+    btn.style.left = `${Math.max(0, x)}px`;
+    btn.style.top = `${Math.max(0, y)}px`;
+
+    // Ensure it sits on top of everything
+    btn.style.zIndex = "100";
 }
 
 // Mobile support: If they try to tap it on phone, it moves
@@ -48,9 +62,18 @@ document.getElementById('runawayBtn').addEventListener('touchstart', function (e
 });
 
 function goToPage2() {
+    // 1. Hide Page 1
     document.getElementById('page1').classList.add('hidden');
+
+    // 2. Show Page 2
     document.getElementById('page2').classList.remove('hidden');
-    // Try to play audio (might be blocked by browser policies)
+
+    // 3. FIX: Hide the Runaway No Button
+    // Since we moved it to the body, we must hide it manually
+    const runawayBtn = document.getElementById('runawayBtn');
+    runawayBtn.style.display = 'none';
+
+    // 4. Play Audio
     audio.play().catch(e => console.log("Audio needs interaction"));
 }
 
@@ -60,10 +83,10 @@ const loveText = document.getElementById('loveText');
 
 slider.addEventListener('input', function () {
     const val = this.value;
-    if (val < 20) loveText.innerText = "Only this much? 🥺";
-    else if (val < 50) loveText.innerText = "Getting there...";
-    else if (val < 80) loveText.innerText = "Almost...";
-    else if (val < 100) loveText.innerText = "I love you too! ❤️";
+    if (val < 20) loveText.innerText = "only this much? 🥺";
+    else if (val < 50) loveText.innerText = "a little more...";
+    else if (val < 80) loveText.innerText = "almost...";
+    else if (val < 100) loveText.innerText = "i love u too! ❤️";
     else loveText.innerText = "TO INFINITY AND BEYOND! 🚀";
 });
 
@@ -102,17 +125,19 @@ function handleFinalNo() {
 }
 
 function handleFinalYes() {
-    // Clean up Sad Mode
+    // 1. Clean up Sad Mode
     document.body.classList.remove('sad-mode');
     document.getElementById('rainContainer').style.display = 'none';
 
-    // Go to Success Page
+    // 2. Hide Page 3, Show Page 4
     document.getElementById('page3').classList.add('hidden');
     document.getElementById('page4').classList.remove('hidden');
 
-    // Celebration Effects
+    // 3. Play Music & Start Effects
     audio.play();
-    createConfetti();
+
+    // START THE FLOATING EMOJIS HERE
+    startFloatingEmojis();
 }
 
 // --- EFFECTS ---
@@ -134,16 +159,31 @@ function createRain() {
     }
 }
 
-function createConfetti() {
-    // Simple confetti explosion
-    for (let i = 0; i < 50; i++) {
-        const confetti = document.createElement('div');
-        confetti.innerText = ['❤️', '🎉', '🌹', '🧸'][Math.floor(Math.random() * 4)];
-        confetti.style.position = 'fixed';
-        confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.top = '-50px';
-        confetti.style.fontSize = '20px';
-        confetti.style.animation = `rain 3s linear forwards`; // Reusing rain animation
-        document.body.appendChild(confetti);
-    }
+function startFloatingEmojis() {
+    const emojis = ['❤️', '💖', '💝', '💗', '💓', '🧸', '🐻', '🌹'];
+
+    // Create a new emoji every 300 milliseconds (fast stream)
+    setInterval(() => {
+        const emoji = document.createElement('div');
+        emoji.classList.add('floating-emoji');
+
+        // Pick random emoji
+        emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+
+        // Random Position (0% to 100% width)
+        emoji.style.left = Math.random() * 100 + 'vw';
+
+        // Random Animation Speed (between 5s and 10s)
+        emoji.style.animationDuration = Math.random() * 5 + 5 + 's';
+
+        // Random Size
+        emoji.style.fontSize = Math.random() * 20 + 20 + 'px';
+
+        document.body.appendChild(emoji);
+
+        // Remove element after it floats off screen to keep browser fast
+        setTimeout(() => {
+            emoji.remove();
+        }, 10000);
+    }, 300);
 }
