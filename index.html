@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Favorite Person 💌</title>
+    <title>for my favorite person 💌</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap"
         rel="stylesheet">
@@ -14,51 +14,51 @@
 
 <body>
 
-    <div class="floating-hearts" id="heartsContainer"></div>
     <div class="rain-container" id="rainContainer"></div>
+
     <div class="card">
 
         <div id="page1" class="page-section">
-            <h1 class="title">Do you like me? 🥺</h1>
+            <h1 class="title">do u love me? 🥺</h1>
             <div class="buttons">
-                <button class="btn btn-yes" onclick="goToPage2()">Yes</button>
-                <button class="btn btn-no" id="runawayBtn" onmouseover="moveButton(this)">No</button>
+                <button class="btn btn-yes" onclick="goToPage2()">yes</button>
+                <button class="btn btn-no" id="runawayBtn" onmouseover="moveButton(this)">no</button>
             </div>
-            <p class="secret-text">Hover over "No" if you dare...</p>
+            <p class="secret-text">hover over "no" if u dare...</p>
         </div>
 
         <div id="page2" class="page-section hidden">
-            <h1 class="title">How much do you love me? ❤️</h1>
+            <h1 class="title">how much do u love me? ❤️</h1>
 
             <div class="meter-container">
                 <input type="range" min="1" max="100" value="50" class="slider" id="loveSlider">
-                <p id="loveText">This much!</p>
+                <p id="loveText">this much!</p>
             </div>
 
-            <button class="btn btn-yes" onclick="goToPage3()">Next ➡️</button>
+            <button class="btn btn-yes" onclick="goToPage3()">next ➡️</button>
         </div>
 
         <div id="page3" class="page-section hidden">
             <div class="character-area">
-                <img id="mainImage" src="us.jpg" alt="Us">
+                <img id="mainImage" src="us.jpeg" alt="us">
             </div>
 
             <div class="text-area">
-                <h1 id="mainTitle">I know you're already mine... ❤️</h1>
-                <p id="subText">And this is a little late. But will you be my Valentine today?</p>
+                <h1 class="title">will u be my valentine today? ❤️</h1>
+                <p id="subText">i know it's a little late, but will u...?</p>
             </div>
 
             <div class="buttons">
-                <button id="finalYesBtn" class="btn btn-yes" onclick="handleFinalYes()">Yes</button>
-                <button id="finalNoBtn" class="btn btn-no" onclick="handleFinalNo()">No</button>
+                <button id="finalYesBtn" class="btn btn-yes" onclick="handleFinalYes()">yes</button>
+                <button id="finalNoBtn" class="btn btn-no" onclick="handleFinalNo()">no</button>
             </div>
         </div>
 
         <div id="page4" class="page-section hidden">
-            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDN4ZHIxN3Z0ZnF3Ynd2Y2IxZm41aW14NWZ5Ynh6Y214aDF3aG0yMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/26BRv0ThflsKCq2Bc/giphy.gif"
-                alt="Celebration" class="celebration-img">
-            <h1 class="title">YAYYYYY! 🎉</h1>
-            <p>I love you so much! (Now come give me a kiss 💋)</p>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZ0YThjaG52dnRzNzViajg1bm5pcTg5cDZhejJja2FhZnF6aDluNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jyYLZNC0smvFiNZur9/giphy.gif"
+                alt="celebration" class="celebration-img">
+            <h1 class="title">yayyyyy! 🎉</h1>
+            <p>i love u so much babyyy!</p>
         </div>
 
     </div>
