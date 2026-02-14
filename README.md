@@ -1,38 +1,28 @@
-# 💝 Project: Operation Better Late Than Never (v2.0)
+# 💝 project: better late than never
 
-> **Status:** Critical Priority 🚨  
-> **Target:** My Favorite Person 🥺  
-> **Deployment Date:** February 14th, 2026 (I know, I know...)
+> **status:** slightly late but full of love (╥﹏╥)
+> **target:** my favorite human everrrrr ♡
+> **deployment date:** february 14th, 2026 (yes… i know… pls don't be mad)
 
-## 📝 Patch Notes (The Apology)
+## 📝 patch notes (aka my apology)
 
-**Issue #1:** The boyfriend (me) failed to deploy the "Will You Be My Valentine?" query on time.
-**Root Cause:** Latency in brain processing and trying to make this perfect for you.
-**Fix:** Deployed this interactive website to make up for it.
+**bug found:** i forgot to ask “will you be my valentine?”.
+**reason:** my brain lagged and i kept overthinking abt birthday gift instead....
+**hotfix:** i built this tiny website because you deserve more than a dry one-line text.
 
-**To my angry (but cute) girlfriend:**
-I know I'm late, and I know you were mad (rightfully so). I didn't want to just ask you with a boring text. I wanted to build something that shows how much effort I'm willing to put in just to see you smile. 
+**to my (rightfully) very cute girlfriend:**
 
-Please accept this pull request to your heart? 🥺👉👈
+i know i messed up. i know you were sad/mad and you had every right to be.
 
-## ✨ Features
+so i made this instead — something small, just to see you smile even if i’m a little late.
+please accept this update to your heart? 🥺👉👈
 
-- **Responsive Design:** Looks great on your phone (mobile-first, just like you're my priority-first).
-- **The "Guilt Trip" Engine:** Try clicking "No" on the last page. Go ahead. See what happens. (Spoiler: It rains, and I cry).
-- **Custom Assets:** Features a photo of us (`us.jpg`) because you are the main character.
-- **Strawberries & Cream UI:** A custom color palette designed just for you.
+## ✨ features
 
-## 🚀 How to Run
-
-1.  Open `index.html` in your browser (Chrome/Safari).
-2.  Turn up your volume (there is music!).
-3.  Answer the questions honestly (but please say yes eventually).
-
-## 🛠️ Tech Stack
-
-- **HTML5:** For the structure of my love.
-- **CSS3:** For the style (because you have the best style).
-- **JavaScript:** For the logic (since I clearly lacked some earlier).
+- **mobile friendly:** because you’re always on your phone and i wanted it to actually look nice there.
+- **emotional damage mode:** try pressing “no” at the end. go ahead. i’ll just cry quietly (｡•́︿•̀｡)
+- **custom photos:** yes that’s our picture. because you’re literally the main character.
+- **strawberries & cream theme:** soft colors because you’re soft… even when you’re mad at me.
 
 ---
-*Made with ❤️, caffeine, and a lot of panic by your boyfriend.*
+*made with love, panic, and way too much overthinking by your girlfriend ♡*
