@@ -14,7 +14,7 @@
 
 i know i messed up. i know you were sad/mad and you had every right to be.
 
-so i made this instead — something small, just to see you smile even if i’m a little late.
+so i made this instead.
 please accept this update to your heart? 🥺👉👈
 
 ## ✨ features
